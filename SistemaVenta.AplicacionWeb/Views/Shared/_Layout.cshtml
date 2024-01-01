@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="~/css/sb-admin-2.css" rel="stylesheet">
     <link href="~/lib/toastr/toastr.min.css" rel="stylesheet">
     <link href="~/lib/sweetalert/sweetalert.css" rel="stylesheet">
     @await RenderSectionAsync("Estilos", required: false)
@@ -143,7 +143,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="perfil.html">
+                                <a class="dropdown-item" href="@Url.Action("Perfil", "Home")">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Perfil
                                 </a>
