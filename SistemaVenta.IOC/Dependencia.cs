@@ -9,6 +9,8 @@ using SistemaVenta.DAL.BDContext;
 using Microsoft.EntityFrameworkCore;
 using SistemaVenta.DAL.Implementacion;
 using SistemaVenta.DAL.Interfaces;
+using SistemaVenta.BLL.Interfaces;
+using SistemaVenta.BLL.Implementacion;
 
 namespace SistemaVenta.IOC
 {
@@ -26,6 +28,9 @@ namespace SistemaVenta.IOC
             // Con transient podemos hacer que varíen los tipos de datos
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IVentaRepository, VentaRepository>();
+
+            // Agregamos la dependencia de la interfaz IProductoService y la clase ProductoService para el envío de correos
+            services.AddScoped<ICorreoService, CorreoService>();
         }
     }
 }
