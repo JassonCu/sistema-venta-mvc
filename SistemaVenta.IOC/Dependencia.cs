@@ -31,6 +31,9 @@ namespace SistemaVenta.IOC
 
             // Agregamos la dependencia de la interfaz IProductoService y la clase ProductoService para el envío de correos
             services.AddScoped<ICorreoService, CorreoService>();
+
+            // Agregamos la dependecia de la interfaz IFireBaseServices y la clase FireBaseService para subir archivos y eliminar archivos a Firebase.
+            services.AddScoped<IFireBaseServices, FireBaseService>();
         }
     }
 }
