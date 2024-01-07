@@ -34,6 +34,12 @@ namespace SistemaVenta.IOC
 
             // Agregamos la dependecia de la interfaz IFireBaseServices y la clase FireBaseService para subir archivos y eliminar archivos a Firebase.
             services.AddScoped<IFireBaseServices, FireBaseService>();
+
+            // Agregamos la dependencia de la interfaz IUtilidades y la clase UtilidadesServices para el manejo y encriptación de contraseñas.
+            services.AddScoped<IUtilidades, UtilidadesServices>();
+
+            // Agregamos la dependecia para el manejo de Roles.
+            services.AddScoped<IRolService, RolService>();
         }
     }
 }
