@@ -40,6 +40,9 @@ namespace SistemaVenta.IOC
 
             // Agregamos la dependecia para el manejo de Roles.
             services.AddScoped<IRolService, RolService>();
+
+            // Agregamos la dependecia para el manejo de Usuarios.
+            services.AddScoped<IUsuarioService, UsuarioService>();
         }
     }
 }
