@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVenta.Entity", "SistemaVenta.Entity\SistemaVenta.Entity.csproj", "{74245596-F3A1-4C20-98AF-B4D67F78D482}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaVenta.Entity", "SistemaVenta.Entity\SistemaVenta.Entity.csproj", "{74245596-F3A1-4C20-98AF-B4D67F78D482}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVenta.DAL", "SistemaVenta.DAL\SistemaVenta.DAL.csproj", "{073DDE05-8F2E-4D8A-8C53-5089938926B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaVenta.DAL", "SistemaVenta.DAL\SistemaVenta.DAL.csproj", "{073DDE05-8F2E-4D8A-8C53-5089938926B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVenta.BLL", "SistemaVenta.BLL\SistemaVenta.BLL.csproj", "{42CC6EA6-ACFC-4826-8336-EFAC44ED4157}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaVenta.BLL", "SistemaVenta.BLL\SistemaVenta.BLL.csproj", "{42CC6EA6-ACFC-4826-8336-EFAC44ED4157}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVenta.IOC", "SistemaVenta.IOC\SistemaVenta.IOC.csproj", "{53B984C2-8F9D-46CC-8098-7FDE889B822F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaVenta.IOC", "SistemaVenta.IOC\SistemaVenta.IOC.csproj", "{53B984C2-8F9D-46CC-8098-7FDE889B822F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVenta.AplicacionWeb", "SistemaVenta.AplicacionWeb\SistemaVenta.AplicacionWeb.csproj", "{0AC49613-1F37-4517-B4F8-F0B134A9AB07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaVenta.AplicacionWeb", "SistemaVenta.AplicacionWeb\SistemaVenta.AplicacionWeb.csproj", "{0AC49613-1F37-4517-B4F8-F0B134A9AB07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVenta.Test", "SistemaVenta.Test\SistemaVenta.Test.csproj", "{1B216B8A-2D63-420B-8218-C4E322515F7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0AC49613-1F37-4517-B4F8-F0B134A9AB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AC49613-1F37-4517-B4F8-F0B134A9AB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AC49613-1F37-4517-B4F8-F0B134A9AB07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B216B8A-2D63-420B-8218-C4E322515F7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B216B8A-2D63-420B-8218-C4E322515F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B216B8A-2D63-420B-8218-C4E322515F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B216B8A-2D63-420B-8218-C4E322515F7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
