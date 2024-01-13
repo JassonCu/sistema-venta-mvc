@@ -8,6 +8,8 @@
 
         public int? IdTipoDocumentoVenta { get; set; }
 
+        public string? TipoDocumentoVenta { get; set; }
+
         public int? IdUsuario { get; set; }
 
         public string? Usuario { get; set; }

@@ -10,7 +10,7 @@
 
         public string? PaginaAccion { get; set; }
 
-        public virtual ICollection<VMMenu> SubMenu { get; set; }
+        public virtual ICollection<VMMenu> SubMenus { get; set; }
 
     }
 }
