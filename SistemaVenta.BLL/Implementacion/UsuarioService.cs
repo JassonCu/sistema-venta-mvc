@@ -151,6 +151,7 @@ namespace SistemaVenta.BLL.Implementacion
                 usuarioEditar.Correo = entidad.Correo;
                 usuarioEditar.Telefono = entidad.Telefono;
                 usuarioEditar.IdRol = entidad.IdRol;
+                usuarioEditar.EsActivo = entidad.EsActivo;
                 
                 // Si el usuario no tiene una foto, la asignamos al usuario a editar.
                 if (usuarioEditar.NombreFoto == "")

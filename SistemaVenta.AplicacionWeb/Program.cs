@@ -10,6 +10,7 @@ builder.Services.InyectarDependencias(builder.Configuration);
 
 // Agregamos la dependecia para que sea accesible desde cualquier parte del proyecto
 builder.Services.AddAutoMapper(typeof(AutomapperProfile));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
