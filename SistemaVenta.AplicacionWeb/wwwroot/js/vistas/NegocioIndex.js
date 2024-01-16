@@ -8,7 +8,6 @@ $(document).ready(function () {
             return response.ok ? response.json() : Promise.reject(response);
         })
         .then(responseJson => {
-            console.log(responseJson)
             if (responseJson.estado) {
                 const res = responseJson.objeto
 
@@ -16,7 +15,7 @@ $(document).ready(function () {
                 $("#txtRazonSocial").val(res.nombre)
                 $("#txtCorreo").val(res.correo)
                 $("#txtDireccion").val(res.direccion)
-                $("#txtTelefono").val(res.telefono)
+                $("#txTelefono").val(res.telefono)
                 $("#txtImpuesto").val(res.porcentajeImpuesto)
                 $("#txtSimboloMoneda").val(res.simboloMoneda)
                 $("#imgLogo").attr("src", res.urlLogo)
@@ -44,7 +43,7 @@ $("#btnGuardarCambios").click(function () {
         nombre: $("#txtRazonSocial").val(),
         correo: $("#txtCorreo").val(),
         direccion: $("#txtDireccion").val(),
-        telefono: $("#txtTelefono").val(),
+        telefono: $("#txTelefono").val(),
         porcentajeImpuesto: $("#txtImpuesto").val(),
         simboloMoneda: $("#txtSimboloMoneda").val(),
     }
@@ -68,6 +67,7 @@ $("#btnGuardarCambios").click(function () {
             if (responseJson.estado) {
                 const res = responseJson.objeto
 
+                swal("Cambios guardados", "Los cambios se han guardado exitosamente.", "success");
                 $("#imgLogo").attr("src", res.urlLogo)
 
             } else {
