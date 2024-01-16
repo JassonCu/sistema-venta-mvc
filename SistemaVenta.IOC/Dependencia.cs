@@ -43,6 +43,9 @@ namespace SistemaVenta.IOC
 
             // Agregamos la dependecia para el manejo de Usuarios.
             services.AddScoped<IUsuarioService, UsuarioService>();
+
+            // Agregamos la dependecia para el manejo de los negocios.
+            services.AddScoped<INegocioService, NegocioService>();
         }
     }
 }
