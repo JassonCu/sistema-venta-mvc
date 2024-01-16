@@ -19,7 +19,7 @@ $(document).ready(function () {
                 $("#txtTelefono").val(res.telefono)
                 $("#txtImpuesto").val(res.porcentajeImpuesto)
                 $("#txtSimboloMoneda").val(res.simboloMoneda)
-                $("#txtLogo").attr("src", res.urlLogo)
+                $("#imgLogo").attr("src", res.urlLogo)
             } else {
                 swal("Lo sentimos", responseJson.mensaje, "error");
             }
@@ -51,10 +51,11 @@ $("#btnGuardarCambios").click(function () {
     const inputFoto = document.getElementById('txtLogo');
     const formData = new FormData();
 
-    formData.append('modelo', JSON.stringify(modelo));
     formData.append('logo', inputFoto.files[0]);
+    formData.append('modelo', JSON.stringify(modelo));
 
     $(".card-body").LoadingOverlay("show");
+
     fetch("/Negocio/GuardarCambios", {
         method: 'POST',
         body: formData,
@@ -66,13 +67,11 @@ $("#btnGuardarCambios").click(function () {
         .then(responseJson => {
             if (responseJson.estado) {
                 const res = responseJson.objeto
+
                 $("#imgLogo").attr("src", res.urlLogo)
 
             } else {
                 swal("Lo sentimos", responseJson.mensaje, "error");
             }
         })
-        .catch(error => {
-            console.error("Error fetching roles:", error);
-        });
 })
